@@ -1,7 +1,9 @@
-var presupuesto = prompt("ingrese su presupuesto")
-var resultado = presupuesto * 50 / 100 ; 
-alert( "Sus gastos necesarios son " + resultado )
-var resultado2 = presupuesto * 30 / 100 ;
-alert( "Sus gastos opcionales son " + resultado2 )
-var resultado3 = presupuesto * 20 / 100;
-alert( "Sus ahorros e inversion son " + resultado3 )
+var usuario = prompt("ingrese su usuario")
+var clave = prompt ("ingrese su clave")
+
+        
+if (usuario == "admi" && clave == "1234") {
+    alert("Bienvenido")
+} else {
+    alert("Su usuario o clave son incorrectas")
+}

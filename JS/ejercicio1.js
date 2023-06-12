@@ -1,13 +1,9 @@
 
 
-        var costoFijo = prompt("ingrese su costo fijo")
-        var venta = prompt("ingrese su precio de venta")
-        var costoVar = prompt("ingrese su costo variable")
-        var resultado = costoFijo /  (venta - costoVar); 
-        alert( "el resultado de su operacion es " + resultado )
+        var edad = prompt("ingrese su edad")
         
-        if (costoFijo>100) {
-            alert("Su costo fijo es muy alto, es mayor a 100")
+        if (edad>=18) {
+            alert("Bienvenido")
         } else {
-            alert("Su costo fijo es bajo. Excelente!")
+            alert("Usted es menor de edad, no puede ingresar a este sitio")
         }
