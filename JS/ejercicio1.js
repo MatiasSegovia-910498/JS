@@ -1,4 +1,5 @@
 
+
 var meses = [
     {"mes":"enero","ingreso" : 500,"egreso": 500},
     {"mes":"febrero","ingreso" : 2000,"egreso": 2000},
@@ -13,7 +14,15 @@ var meses = [
     {"mes":"noviembre","ingreso" : 35000,"egreso": 53000},
     {"mes":"diciembre","ingreso" : 3800,"egreso": 34000}
  ]
-for ( var i=0 ; i<meses.length ; i++) {
-    console.log ("su balance de " + meses [i].mes+ " es $"+ (meses[i].ingreso-meses[i].egreso))
-}
+ for ( var i=0 ; i<meses.length ; i++) {
+    
+    var balance = (meses[i].ingreso - meses[i].egreso)
 
+    if (balance < 0) {
+        alert ("su balance de " + meses [i].mes + " es $"+ balance + ". Resultado =" + " -1")
+    } else if (balance > 0) {
+        alert ("su balance de " + meses [i].mes + " es $"+ balance + ". Resultado =" + " 1")
+    } else if (balance == 0) {
+        alert ("su balance de " + meses [i].mes + " es $"+ balance + ". Resultado =" + " 0")
+    } 
+}
